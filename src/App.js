@@ -1,22 +1,40 @@
 import React, { Component } from 'react';
 import logo from '.logo.svg';
 import './App.css';
+import Home from './views/Home/Home';
 
 
-//Latihan 5.2, penggunaan function javascript sebagai komponen
-function Message() {
-	return <p>Hello from message component</p>
+//Latihan 5.3, Class Component
+function Message() { 
+	return "Pesan didalam Component";
 }
 
 class App extends Component {
+	
 	render() {
 		return (
 			<div>
 				<Message />
+				<Home />
 			</div>
-		)
+		);
 	}
 }
+
+//Latihan 5.2, penggunaan function javascript sebagai komponen
+// function Message() {
+// 	return <p>Hello from message component</p>
+// }
+
+// class App extends Component {
+// 	render() {
+// 		return (
+// 			<div>
+// 				<Message />
+// 			</div>
+// 		)
+// 	}
+// }
 
 
 //Latihan 5.1, Penggunana function pada Reactjs
@@ -39,4 +57,4 @@ class App extends Component {
 // 	}
 // }
 
-// export default App;
+export default App;
