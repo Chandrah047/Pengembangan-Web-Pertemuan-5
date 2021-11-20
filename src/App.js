@@ -1,24 +1,42 @@
 import React, { Component } from 'react';
+import logo from '.logo.svg';
 import './App.css';
 
-//Latihan 4.1, Penggunana function pada Reactjs
-function sayHello() {
-	return "Hello World";
+
+//Latihan 5.2, penggunaan function javascript sebagai komponen
+function Message() {
+	return <p>Hello from message component</p>
 }
 
 class App extends Component {
-	bilangHalo() {
-		return "Halo Dunia";
-	}
-	
 	render() {
 		return (
-		<div>
-				<p>sayHello : <b>{sayHello()}</b></p>
-				<p>bilangHalo : <b>{this.bilangHalo()}</b>
+			<div>
+				<Message />
 			</div>
 		)
 	}
 }
 
-export default App;
+
+//Latihan 5.1, Penggunana function pada Reactjs
+// function sayHello() {
+// 	return "Hello World";
+// }
+
+// class App extends Component {
+// 	bilangHalo() {
+// 		return "Halo Dunia";
+// 	}
+	
+// 	render() {
+// 		return (
+// 		<div>
+// 				<p>sayHello : <b>{sayHello()}</b></p>
+// 				<p>bilangHalo : <b>{this.bilangHalo()}</b>
+// 			</div>
+// 		)
+// 	}
+// }
+
+// export default App;
