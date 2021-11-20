@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from '.logo.svg';
 import './App.css';
 import Home from './views/Home/Home';
 
-
-//Latihan 5.3, Class Component
-function Message() { 
-	return "Pesan didalam Component";
+//Latihan 5.4, Props
+function Message(props) {
+	return <p>Hello {props.name},</p>;
 }
 
 class App extends Component {
@@ -14,12 +12,30 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Message />
-				<Home />
+				<Message name="Ulrich" />
+				<Home name="Eden Hazard" />
 			</div>
 		);
 	}
 }
+
+
+//Latihan 5.3, Class Component
+// function Message() { 
+// 	return "Pesan didalam Component";
+// }
+
+// class App extends Component {
+	
+// 	render() {
+// 		return (
+// 			<div>
+// 				<Message />
+// 				<Home />
+// 			</div>
+// 		);
+// 	}
+// }
 
 //Latihan 5.2, penggunaan function javascript sebagai komponen
 // function Message() {
