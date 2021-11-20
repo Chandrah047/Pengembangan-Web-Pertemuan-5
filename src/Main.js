@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import Card from './components/Card/Card';
-import Card from './components/Input/Input';
 
-//Latihan 4.10, Props function
+//Latihan 5.10, Props function
 export default class Main extends React.Component{
 
 	constructor(){
@@ -32,14 +31,14 @@ export default class Main extends React.Component{
 	}
 }
 
-//Latihan 4.7, Child Component
-//export default class Main extends React.Component{
-//	render() {
-//		return(
-//			<Card>
-//				<p>Build encapsulated components that manage their own state, then compose 
-//				them to make complex UIs. </p> 
-//			</Card>
-// 		);
-// 	}
+//Latihan 5.7, Child Component
+// export default class Main extends React.Component{
+// 	render() {
+// 		return(
+// 			<Card>
+// 				<p>Build encapsulated components that manage their own state, then compose 
+// 				them to make complex UIs. </p> 
+// 			</Card>
+//  		);
+//  	}
 // }
